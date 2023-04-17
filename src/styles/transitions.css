@@ -1,0 +1,37 @@
+/* Fade transitions */
+.fade-enter {
+  @apply opacity-0;
+}
+
+.fade-enter-active {
+  @apply opacity-100 transition-opacity duration-1000 ease-in;
+}
+
+.fade-exit {
+  @apply opacity-100;
+}
+
+.fade-exit-active {
+  @apply opacity-0 transition-opacity duration-300 ease-in;
+}
+
+/* Collapse transitions */
+.collapse-enter {
+  @apply opacity-0 h-0 overflow-hidden;
+}
+
+.collapse-enter-active {
+  @apply opacity-100 max-h-0 overflow-hidden transition-opacity duration-300 ease-in;
+  transition: opacity 300ms ease-in, max-height 300ms ease-in;
+  max-height: 1000px; /* Increase this value if the element has a larger height */
+}
+
+.collapse-exit {
+  @apply opacity-100 h-auto overflow-hidden;
+}
+
+.collapse-exit-active {
+  @apply opacity-0 max-h-0 overflow-hidden transition-opacity duration-300 ease-in;
+  transition: opacity 300ms ease-in, max-height 300ms ease-in;
+  max-height: 1000px; /* Increase this value if the element has a larger height */
+}

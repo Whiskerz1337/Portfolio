@@ -5,7 +5,7 @@ import { projectData } from '../Data/data'
 const ProjectsSection = () => {
   return (
     <>
-      <div className=' flex flex-col items-center justify-center p-4'>
+      <div className='mb-8 mt-4 flex min-w-full flex-col items-center justify-center border-t-2 border-arcade'>
         <h2 className='m-4 flex justify-center self-center font-exo text-4xl text-primary'>
           Projects
         </h2>
