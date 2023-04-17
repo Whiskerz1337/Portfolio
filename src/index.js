@@ -1,35 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import Main from './Pages/Main'
-import CV from './Pages/CV'
+import './styles/index.css'
+import './styles/fonts.css'
+import Main from './Main'
 import reportWebVitals from './reportWebVitals'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ErrorPage from './Pages/ErrorPage'
-import Projects from './Pages/Projects'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Main />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/Projects',
-    element: <Projects />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/CV',
-    element: <CV />,
-    errorElement: <ErrorPage />,
-  },
-])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Main />
   </React.StrictMode>,
 )
 

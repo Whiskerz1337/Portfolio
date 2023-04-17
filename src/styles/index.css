@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.pdf-container {
-  background-color: aliceblue;
+#root {
+  @apply bg-black min-h-screen;
+}
+
+html {
+  font-size: 16px;
+  max-width: screen;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
 }
 
 body {
