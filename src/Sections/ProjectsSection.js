@@ -1,14 +1,16 @@
 import React from 'react'
 import PortfolioItem from '../Components/PortfolioItem'
 import { projectData } from '../Data/data'
+import '../styles/index.css'
 
 const ProjectsSection = () => {
   return (
     <>
-      <div className='mb-8 mt-4 flex min-w-full flex-col items-center justify-center border-t-2 border-arcade'>
+      <div className='mb-8 mt-4 flex flex-col items-center justify-center border-t-2 border-arcade'>
         <h2 className='m-4 flex justify-center self-center font-exo text-4xl text-primary'>
           Projects
         </h2>
+
         {projectData &&
           projectData.map((project, index) => {
             return (

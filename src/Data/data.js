@@ -99,21 +99,6 @@ export const links = [
 
 export const projectData = [
   {
-    title: 'CSGraphs',
-    description:
-      'Currently in development, this project uses the Steam Community API to track CSGO skin prices over time, and display them in various ways.',
-    imageUrl: `${process.env.PUBLIC_URL}/CSGraphs/CSGO_thumb.jpg`,
-    technologies: [
-      'Team Project',
-      'NodeJS',
-      'Concurrently',
-      'React',
-      'Tailwind CSS',
-      'Express',
-      'Firebase',
-    ],
-  },
-  {
     title: 'Automated Camera Array',
     description:
       "A near-completion project I'm building for a client which triggers an array of cameras to fire upon submission of a Google Form. This system then grabs information from the form (via web-hook), creates a folder on Google Drive, and uploads the images into the folder. A link to the folder is then added as a new column onto the form response.",
@@ -131,27 +116,27 @@ export const projectData = [
     ],
   },
   {
-    title: 'My Portfolio Site',
-    description:
-      'This site! I wanted a place to display my projects and band together my contact information.',
-    imageUrl: `${process.env.PUBLIC_URL}/Portfolio/Portfolio_thumb.png`,
-    technologies: [
-      'Solo Project',
-      'NodeJS',
-      'React',
-      'Tailwind CSS',
-      'Prop-types',
-      'ESLint',
-      'Prettier',
-    ],
-  },
-  {
     title: 'IP_variables',
     description:
       'A CLI tool I built for Kali Linux. I designed this to allow saving a target IP address to an environment variable which can persist through shell instances and reboots.',
     imageUrl: `${process.env.PUBLIC_URL}/kali_logo.png`,
     technologies: ['Solo Project', 'bash', 'zsh', 'Kali Linux', 'git', 'GitHub'],
     link: 'https://github.com/Whiskerz1337/IP_variables',
+  },
+  {
+    title: 'CSGraphs',
+    description:
+      'Currently in development, this project uses the Steam Community API to track CSGO skin prices over time, and display them in various ways.',
+    imageUrl: `${process.env.PUBLIC_URL}/CSGraphs/CSGO_thumb.jpg`,
+    technologies: [
+      'Team Project',
+      'NodeJS',
+      'Concurrently',
+      'React',
+      'Tailwind CSS',
+      'Express',
+      'Firebase',
+    ],
   },
   {
     title: 'Time/Attendance App',
@@ -170,6 +155,22 @@ export const projectData = [
       'Authentication',
       'Authorisation',
       'Accounting',
+    ],
+  },
+
+  {
+    title: 'My Portfolio Site',
+    description:
+      'This site! I wanted a place to display my projects and band together my contact information.',
+    imageUrl: `${process.env.PUBLIC_URL}/Portfolio/Portfolio_thumb.png`,
+    technologies: [
+      'Solo Project',
+      'NodeJS',
+      'React',
+      'Tailwind CSS',
+      'Prop-types',
+      'ESLint',
+      'Prettier',
     ],
   },
   {

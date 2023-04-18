@@ -3,7 +3,7 @@ import React from 'react'
 const BioSection = () => {
   return (
     <section id='bio'>
-      <p className='mb-8 text-center font-roboto text-xl leading-relaxed text-primary'>
+      <p className='mb-8 mt-6 text-center font-roboto text-xl leading-relaxed text-primary'>
         Hi, I&apos;m Luke, a Melbourne based cybersecurity student from the UK with a passion for
         penetration testing, problem-solving, and software development. As a strong communicator, I
         can effectively collaborate with diverse teams and clients in the ever-evolving world of

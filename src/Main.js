@@ -9,27 +9,28 @@ import SmoothCollapse from './styles/SmoothCollapse'
 const Main = () => {
   const [activeSection, setActiveSection] = useState(null)
   const sectionButtons = [
-    { content: 'See my skills', name: 'skills' },
     { content: 'Check out my projects', name: 'projects' },
+    { content: 'See my skills', name: 'skills' },
+    { content: 'Bio', name: 'bio' },
     { content: 'Get in touch!', name: 'contact' },
   ]
 
   const activateSection = (targetName) => {
     if (activeSection !== targetName) setActiveSection(targetName)
-    else setActiveSection('bio')
+    else setActiveSection('projects')
   }
 
   useEffect(() => {
     if (activeSection === null) {
       setTimeout(function () {
-        setActiveSection('bio')
-      }, 500)
+        setActiveSection('projects')
+      }, 200)
     }
   }, [])
 
   return (
     <>
-      <div className='container mx-auto w-full bg-primary p-4'>
+      <div className='container mx-auto  w-full bg-primary p-4'>
         <section id='title' className='mb-2'>
           <h1 className='mb-1 flex justify-center self-center font-exo text-5xl text-sith'>
             Luke Bailey
@@ -38,10 +39,6 @@ const Main = () => {
             Bridging Cybersecurity and Software Development Expertise
           </h1>
         </section>
-
-        <SmoothCollapse in={activeSection === 'bio'}>
-          <BioSection id='bio' />
-        </SmoothCollapse>
 
         <section
           id='main-section'
@@ -58,7 +55,9 @@ const Main = () => {
               />
             ))}
           </div>
-
+          <SmoothCollapse in={activeSection === 'bio'}>
+            <BioSection id='bio' />
+          </SmoothCollapse>
           <SmoothCollapse in={activeSection === 'contact'}>
             <ContactSection id='contact' />
           </SmoothCollapse>
