@@ -10,7 +10,7 @@ export const skillsList = [
   },
   {
     title: 'Programming Languages',
-    items: ['Python', 'JavaScript', 'Bash', 'JSX'],
+    items: ['Python', 'JavaScript', 'Bash', 'JSX', 'Rust'],
   },
   {
     title: 'CLIs',
@@ -99,9 +99,9 @@ export const links = [
 
 export const projectData = [
   {
+    id: 0,
     title: 'Automated Camera Array',
-    description:
-      "A near-completion project I'm building for a client which triggers an array of cameras to fire upon submission of a Google Form. This system then grabs information from the form (via web-hook), creates a folder on Google Drive, and uploads the images into the folder. A link to the folder is then added as a new column onto the form response.",
+    description: 'System to trigger Raspi cameras via Google Form Submission.',
     imageUrl: `${process.env.PUBLIC_URL}/Automated_Camera_Array/Cam_pic.jpg`,
     technologies: [
       'Solo Project',
@@ -114,19 +114,22 @@ export const projectData = [
       'Quart',
       'Web-Hooks',
     ],
+    gitHubLink: '',
+    externalLink: '',
   },
   {
-    title: 'IP_variables',
-    description:
-      'A CLI tool I built for Kali Linux. I designed this to allow saving a target IP address to an environment variable which can persist through shell instances and reboots.',
+    id: 1,
+    title: 'tip',
+    description: 'A CLI based target IP address management for penetration testers',
     imageUrl: `${process.env.PUBLIC_URL}/kali_logo.png`,
-    technologies: ['Solo Project', 'bash', 'zsh', 'Kali Linux', 'git', 'GitHub'],
-    link: 'https://github.com/Whiskerz1337/IP_variables',
+    technologies: ['Solo Project', 'Rust', 'zsh', 'bash', 'Kali Linux', 'git', 'GitHub'],
+    gitHubLink: 'https://github.com/Whiskerz1337/tip',
   },
   {
+    id: 2,
     title: 'CSGraphs',
     description:
-      'Currently in development, this project uses the Steam Community API to track CSGO skin prices over time, and display them in various ways.',
+      'Currently in development, tracks CSGO skin prices over time, and display them in various ways.',
     imageUrl: `${process.env.PUBLIC_URL}/CSGraphs/CSGO_thumb.jpg`,
     technologies: [
       'Team Project',
@@ -137,11 +140,14 @@ export const projectData = [
       'Express',
       'Firebase',
     ],
+    gitHubLink: '',
+    externalLink: '',
   },
   {
+    id: 3,
     title: 'Time/Attendance App',
     description:
-      'A time, attendance and shift planning application designed for a removals company. This application was designed by myself and developed in collaboration with a professional back-end engineer.',
+      'Designed for a removals company. Co-developed with a professional back-end engineer.',
     imageUrl: `${process.env.PUBLIC_URL}/CRM_App/login_page.png`,
     technologies: [
       'Team Project',
@@ -152,33 +158,8 @@ export const projectData = [
       'Prop-types',
       'Express',
       'sqlite3',
-      'Authentication',
-      'Authorisation',
-      'Accounting',
     ],
-  },
-
-  {
-    title: 'My Portfolio Site',
-    description:
-      'This site! I wanted a place to display my projects and band together my contact information.',
-    imageUrl: `${process.env.PUBLIC_URL}/Portfolio/Portfolio_thumb.png`,
-    technologies: [
-      'Solo Project',
-      'NodeJS',
-      'React',
-      'Tailwind CSS',
-      'Prop-types',
-      'ESLint',
-      'Prettier',
-    ],
-  },
-  {
-    title: 'Game Developer Portfolio Site',
-    description:
-      'A team developed portfolio site for a UK based game developer, built using wordpress.',
-    imageUrl: `${process.env.PUBLIC_URL}/Game_Dev_Portfolio/Game_dev_thumb.png`,
-    technologies: ['Team Project', 'Wordpress', 'HTML', 'JavaScript', 'CSS'],
-    link: 'https://seanhumphreys.com',
+    gitHubLink: '',
+    externalLink: '',
   },
 ]

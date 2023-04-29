@@ -17,6 +17,7 @@ module.exports = {
         secondary: '#000000',
         sith: '#CC2442',
         arcade: '#00E0E0',
+        grey: '#B8B8B8',
       },
       fontFamily: {
         exo: ['exo', 'sans-serif'],
@@ -24,6 +25,7 @@ module.exports = {
       },
       borderColor: {
         arcade: '#00E0E0',
+        sith: '#CC2442',
       },
     },
   },
