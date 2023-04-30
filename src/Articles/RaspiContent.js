@@ -11,7 +11,7 @@ const RaspiContent = ({ imageUrl }) => {
       />
       <div className='relative'>
         <div className='px-4 sm:p-6'>
-          <h2 className='hidden justify-center self-center text-center font-exo text-lg text-primary sm:block sm:text-xl'>
+          <h2 className='hidden justify-center self-center text-center font-exo text-lg text-secondary sm:block sm:text-2xl'>
             Solution
           </h2>
           <br></br>

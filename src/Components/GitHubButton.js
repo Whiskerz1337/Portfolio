@@ -7,7 +7,7 @@ const GitHubButton = ({ url, label }) => {
   return (
     <a
       href={url}
-      className='custom-shadow flex scale-75 cursor-pointer items-center justify-center rounded-2xl border border-white/0 bg-black p-2 font-exo text-sm text-primary hover:scale-105 hover:border-white/100 hover:text-arcade sm:my-3 sm:scale-100'
+      className='custom-shadow flex scale-75 cursor-pointer items-center justify-center rounded-2xl border border-lime/0 bg-indigo-700 p-2 font-exo text-sm text-secondary transition-all duration-300 ease-linear hover:scale-110 hover:border-white/100 hover:text-white sm:my-3 sm:w-40 sm:scale-105'
       target='_blank'
       rel='noopener noreferrer'
     >

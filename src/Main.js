@@ -34,7 +34,7 @@ const Main = () => {
     <>
       <div className='container mx-auto min-h-screen w-full bg-primary p-4'>
         <section id='title' className='mb-2'>
-          <h1 className='mb-1 flex justify-center self-center font-exo text-3xl text-sith sm:text-5xl'>
+          <h1 className='mb-1 flex justify-center self-center font-exo text-2xl text-secondary sm:text-4xl'>
             Luke Bailey
           </h1>
           <h1 className='mb-1 flex justify-center self-center text-center font-exo text-lg text-primary sm:text-2xl'>

@@ -28,7 +28,7 @@ const ProjectsSection = () => {
     <>
       <h2
         className='m-4 flex justify-center self-center border-t-2 border-arcade pt-4
-      font-exo text-4xl text-primary'
+      font-exo text-4xl text-secondary'
       >
         Projects
       </h2>

@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <>
       <div className='mb-12 mt-4 flex min-w-full flex-col items-center justify-center border-t-2 border-arcade'>
-        <h2 className='m-16 flex justify-center self-center font-exo text-4xl text-primary'>
+        <h2 className='m-4 flex justify-center self-center font-exo text-4xl text-secondary'>
           Contact
         </h2>
         <p className='mb-20 text-center font-roboto text-2xl leading-relaxed text-primary sm:mx-72'>

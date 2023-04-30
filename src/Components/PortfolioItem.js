@@ -16,14 +16,14 @@ const PortfolioItem = ({ id, title, description, imageUrl, technologies, active,
         src={imageUrl}
         alt={title}
       />
-      <div className='ml-2 flex-1 p-2 sm:ml-4'>
-        <h3 className='select-none font-exo text-xl text-primary'>{title}</h3>
-        <p className='mb-0 select-none font-exo text-xs text-primary sm:text-sm'>{description}</p>
+      <div className='ml-2 flex-1 p-2 '>
+        <h3 className='select-none font-exo text-2xl text-secondary'>{title}</h3>
+        <p className='mb-0 select-none font-exo text-xs text-primary sm:text-base'>{description}</p>
         <ul className='mb-2 hidden select-none list-none pl-0 sm:block'>
           {technologies.map((tech, index) => (
             <li
               key={index}
-              className='inline-flex truncate pr-1 text-xs font-bold text-grey sm:pr-2'
+              className='inline-flex truncate pr-1 text-sm font-bold text-secondary sm:pr-2'
             >
               {tech}
             </li>
