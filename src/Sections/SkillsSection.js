@@ -1,5 +1,6 @@
 import React from 'react'
 import { skillsList } from '../Data/data'
+import '../styles/button.css'
 
 const SkillsSection = () => {
   return (
@@ -9,12 +10,12 @@ const SkillsSection = () => {
         {skillsList.map((skill, index) => (
           <div
             key={index}
-            className='rounded-3xl border border-arcade bg-secondary p-2 shadow-md sm:p-4'
+            className='custom-shadow rounded-3xl border border-white/5 bg-black p-2 text-primary shadow-md sm:p-4'
           >
-            <h2 className='mb-2 flex-wrap font-exo text-lg sm:text-xl'>{skill.title}</h2>
+            <h2 className='mb-2 flex-wrap font-exo text-lg text-sith sm:text-xl'>{skill.title}</h2>
             <ul className='list-inside list-disc'>
               {skill.items.map((item, itemIndex) => (
-                <li className='font-roboto text-sm sm:text-base' key={itemIndex}>
+                <li className='font-roboto text-sm text-grey sm:text-base' key={itemIndex}>
                   {item}
                 </li>
               ))}

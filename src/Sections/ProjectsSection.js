@@ -7,6 +7,7 @@ import RaspiContent from '../Articles/RaspiContent'
 import TipContent from '../Articles/TipContent'
 import CSGraphsContent from '../Articles/CSGraphsContent'
 import JunkAppContent from '../Articles/JunkAppContent'
+import '../styles/button.css'
 
 const ProjectsSection = () => {
   const [activeArticle, setActiveArticle] = useState(null)
@@ -50,7 +51,7 @@ const ProjectsSection = () => {
             })}
         </div>
         <div
-          className={`ml-5 flex h-full min-h-[58vh] w-2/3 flex-col overflow-hidden rounded-2xl border border-arcade text-primary lg:min-h-0`}
+          className={`custom-shadow ml-5 flex h-full min-h-[58vh] w-2/3 flex-col overflow-hidden rounded-2xl border border-white/5 text-primary lg:min-h-0`}
         >
           <>
             <SmoothCollapse in={activeArticle === 0}>

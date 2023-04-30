@@ -18,7 +18,7 @@ const ProjectArticle = ({ project, children }) => {
           ))}
         </div>
 
-        <div className='flex min-w-full flex-row justify-center border-b-2 border-arcade pb-2'>
+        <div className='flex min-w-full flex-row justify-center border-b-2 border-white/5 pb-2'>
           <GitHubButton url={gitHubLink} label={'View on GitHub'} />
         </div>
         {children}

@@ -7,8 +7,8 @@ const PortfolioItem = ({ id, title, description, imageUrl, technologies, active,
   return (
     <div
       onClick={() => setActive(id)}
-      className={`custom-shadow hover: mb-2 flex h-auto min-w-full scale-95 cursor-pointer flex-row overflow-hidden rounded-2xl border border-arcade transition-all duration-500 ease-linear hover:scale-100 sm:h-40 ${
-        active ? 'scale-100 bg-arcade/50' : 'bg-primary'
+      className={`custom-shadow mb-2 flex h-36 min-w-full cursor-pointer flex-row overflow-hidden rounded-2xl border border-white/0 transition-all duration-500 ease-in-out hover:scale-100 sm:h-40 ${
+        active ? 'scale-100  border-white/100' : 'scale-95 hover:border-white/30'
       }`}
     >
       <img

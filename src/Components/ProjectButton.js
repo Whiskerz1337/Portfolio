@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { SiCodereview } from 'react-icons/si'
-
 import '../styles/button.css'
 
 const ProjectButton = ({ title, content, toggleProject }) => {

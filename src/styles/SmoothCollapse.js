@@ -50,7 +50,7 @@ const SmoothCollapse = ({ in: inProp, children }) => {
           style={{
             overflow: 'hidden',
             maxHeight: maxHeight,
-            transition: 'max-height 600ms ease-in-out',
+            transition: 'max-height 400ms ease-in-out',
           }}
         >
           {children}
