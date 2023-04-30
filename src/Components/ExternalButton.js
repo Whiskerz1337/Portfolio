@@ -21,7 +21,6 @@ ExternalButton.propTypes = {
   url: PropTypes.string.isRequired,
   label: PropTypes.string,
   icon: PropTypes.element,
-  index: PropTypes.number,
 }
 
 export default ExternalButton

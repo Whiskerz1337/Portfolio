@@ -7,12 +7,12 @@ const GitHubButton = ({ url, label }) => {
   return (
     <a
       href={url}
-      className='custom-shadow mx-3 mt-3 flex h-8 cursor-pointer items-center justify-center rounded-2xl bg-sith p-5 font-roboto text-sm text-primary hover:bg-sith/80 hover:text-arcade'
+      className='custom-shadow flex scale-75 cursor-pointer items-center justify-center rounded-2xl bg-sith p-2 font-exo text-sm text-primary hover:scale-105 hover:text-arcade sm:my-3 sm:scale-100'
       target='_blank'
       rel='noopener noreferrer'
     >
       <div className='mr-1'>{label}</div>
-      <FaGithub style={{ fontSize: '1.5rem' }} />
+      <FaGithub style={{ fontSize: '1.8rem' }} />
     </a>
   )
 }

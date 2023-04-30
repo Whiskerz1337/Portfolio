@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react'
+import Footer from './Components/Footer'
 import BioSection from './Sections/BioSection'
 import SkillsSection from './Sections/SkillsSection'
 import ProjectsSection from './Sections/ProjectsSection'
@@ -10,10 +11,10 @@ const Main = () => {
   const [activeSection, setActiveSection] = useState(null)
 
   const sectionButtons = [
-    { content: 'Check out my projects', name: 'projects' },
+    { content: 'Projects', name: 'projects' },
     { content: 'Bio', name: 'bio' },
-    { content: 'See my skills', name: 'skills' },
-    { content: 'Get in touch!', name: 'contact' },
+    { content: 'Skills', name: 'skills' },
+    { content: 'Contact', name: 'contact' },
   ]
 
   const activateSection = (targetName) => {
@@ -33,10 +34,10 @@ const Main = () => {
     <>
       <div className='container mx-auto min-h-screen w-full bg-primary p-4'>
         <section id='title' className='mb-2'>
-          <h1 className='mb-1 flex justify-center self-center font-exo text-5xl text-sith'>
+          <h1 className='mb-1 flex justify-center self-center font-exo text-3xl text-sith sm:text-5xl'>
             Luke Bailey
           </h1>
-          <h1 className='mb-1 flex justify-center self-center text-center font-exo text-2xl text-primary'>
+          <h1 className='mb-1 flex justify-center self-center text-center font-exo text-lg text-primary sm:text-2xl'>
             Bridging Cybersecurity and Software Development Expertise
           </h1>
         </section>
@@ -70,6 +71,9 @@ const Main = () => {
           </SmoothCollapse>
         </section>
         <div className='border-t-2 border-arcade'></div>
+        <div className='sticky top-[100vh] min-w-full'>
+          <Footer />
+        </div>
       </div>
     </>
   )

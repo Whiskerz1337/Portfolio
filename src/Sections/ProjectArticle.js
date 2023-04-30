@@ -8,19 +8,18 @@ const ProjectArticle = ({ project, children }) => {
   return (
     <>
       <div className='flex flex-col items-center justify-center'>
-        <h2 className='mt-2 flex justify-center self-center font-exo text-3xl text-primary'>
-          {title}
-        </h2>
-        <p className='font-roboto text-sm text-primary'>{description}</p>
-        <div className='flex flex-row'>
+        <h2 className='mt-2 text-center font-exo text-2xl text-primary'>{title}</h2>
+        <p className='hidden text-center font-exo text-sm text-primary md:block'>{description}</p>
+        <div className=' hidden flex-wrap justify-center md:flex'>
           {technologies.map((tech, index) => (
-            <li key={index} className='inline-flex truncate pr-2 text-xs text-grey'>
+            <li key={index} className='inline-flex truncate pr-2 text-xs font-bold text-grey'>
               {tech}
             </li>
           ))}
         </div>
+
         <div className='flex min-w-full flex-row justify-center border-b-2 border-arcade pb-2'>
-          {gitHubLink ? <GitHubButton url={gitHubLink} label={'View on GitHub'} /> : <></>}
+          <GitHubButton url={gitHubLink} label={'View on GitHub'} />
         </div>
         {children}
       </div>
@@ -37,4 +36,5 @@ ProjectArticle.propTypes = {
   }),
   children: PropTypes.node,
 }
+
 export default ProjectArticle

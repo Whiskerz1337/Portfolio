@@ -32,7 +32,7 @@ const ProjectsSection = () => {
         Projects
       </h2>
       <div className='flex min-w-full flex-row'>
-        <div className='flex h-2/3 w-1/3 flex-col items-center justify-start'>
+        <div className='flex w-1/3 flex-col items-center justify-start'>
           {projectData &&
             projectData.map((project, index) => {
               return (
@@ -49,27 +49,37 @@ const ProjectsSection = () => {
               )
             })}
         </div>
-        <div className='ml-5 flex h-1/3 w-2/3 flex-col overflow-hidden rounded-2xl border border-arcade text-primary'>
+        <div
+          className={`ml-5 flex h-full min-h-[58vh] w-2/3 flex-col overflow-hidden rounded-2xl border border-arcade text-primary lg:min-h-0`}
+        >
           <>
             <SmoothCollapse in={activeArticle === 0}>
-              <ProjectArticle project={projectData[0]}>
-                <RaspiContent imageUrl={projectData[0].imageUrl} />
-              </ProjectArticle>
+              <div className='h-full'>
+                <ProjectArticle project={projectData[0]}>
+                  <RaspiContent imageUrl={projectData[0].imageUrl} />
+                </ProjectArticle>
+              </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 1}>
-              <ProjectArticle project={projectData[1]}>
-                <TipContent imageUrl={projectData[1].imageUrl} />
-              </ProjectArticle>
+              <div className='h-full'>
+                <ProjectArticle project={projectData[1]}>
+                  <TipContent imageUrl={projectData[1].imageUrl} />
+                </ProjectArticle>
+              </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 2}>
-              <ProjectArticle project={projectData[2]}>
-                <CSGraphsContent imageUrl={projectData[2].imageUrl} />
-              </ProjectArticle>
+              <div className='h-full'>
+                <ProjectArticle project={projectData[2]}>
+                  <CSGraphsContent imageUrl={projectData[2].imageUrl} />
+                </ProjectArticle>
+              </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 3}>
-              <ProjectArticle project={projectData[3]}>
-                <JunkAppContent imageUrl={projectData[3].imageUrl} />
-              </ProjectArticle>
+              <div className='h-full'>
+                <ProjectArticle project={projectData[3]}>
+                  <JunkAppContent imageUrl={projectData[3].imageUrl} />
+                </ProjectArticle>
+              </div>
             </SmoothCollapse>
           </>
         </div>

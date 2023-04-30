@@ -23,7 +23,12 @@ const SmoothCollapse = ({ in: inProp, children }) => {
 
   useEffect(() => {
     if (inProp) {
-      setMaxHeight('auto')
+      if (window.innerWidth <= 640) {
+        // Adjust the value to your desired breakpoint
+        setMaxHeight('80vh') // Adjust the value based on your desired mobile height
+      } else {
+        setMaxHeight('auto')
+      }
     } else {
       setMaxHeight('0px')
     }
@@ -45,7 +50,7 @@ const SmoothCollapse = ({ in: inProp, children }) => {
           style={{
             overflow: 'hidden',
             maxHeight: maxHeight,
-            transition: 'max-height 500ms ease-in-out',
+            transition: 'max-height 600ms ease-in-out',
           }}
         >
           {children}

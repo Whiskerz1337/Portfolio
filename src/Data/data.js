@@ -9,7 +9,7 @@ export const skillsList = [
     items: ['Nessus', 'openVAS', 'Nikto'],
   },
   {
-    title: 'Programming Languages',
+    title: 'Languages',
     items: ['Python', 'JavaScript', 'Bash', 'JSX', 'Rust'],
   },
   {
@@ -25,43 +25,34 @@ export const skillsList = [
     items: [
       'Network Design',
       'Network Security',
-      'Segmentation and Subnetting',
+      'Subnetting',
       'Cloud Networking',
-      'Network Troubleshooting',
-      'Network and Security Devices',
-      'IDPS',
-      'Firewalls',
+      'Troubleshooting',
+      'Security Devices',
     ],
   },
   {
     title: 'Protocols',
-    items: ['IP', 'TCP/UDP', 'SSH', 'RDP', 'DNS', 'DHCP', 'HTTP/HTTPS/SSL/TLS', 'SFTP'],
+    items: ['IP', 'TCP/UDP', 'SSH/RDP/SFTP', 'DNS', 'DHCP', 'HTTPS/SSL/TLS'],
   },
   {
     title: 'Incident Response',
-    items: [
-      'MITRE ATT&CK Framework',
-      'Cyber Kill Chain',
-      'NIST SP 800-61',
-      'NIST Cybersec Framework',
-      'SANS',
-    ],
+    items: ['MITRE ATT&CK', 'Cyber Kill Chain', 'NIST SP 800-61', 'NIST Framework', 'SANS'],
   },
   {
     title: 'Software/Web Dev',
     items: [
       'NodeJS, npm',
-      'React, React-Native, Redux',
+      'React, Redux',
       'Express',
       'Tailwind CSS',
-      'Bash Scripting',
       'APIs and Requests',
       'Docker',
       'Google Cloud, AWS',
     ],
   },
   {
-    title: 'Cybersecurity Concepts',
+    title: 'Concepts',
     items: [
       'CIA',
       'AAA',
@@ -78,22 +69,45 @@ export const links = [
   {
     label: 'GitHub',
     url: 'https://github.com/Whiskerz1337',
-    icon: <FaGithub className='cursor-pointer' style={{ fontSize: '4rem' }} />,
+    icon: <FaGithub className='cursor-pointer' style={{ fontSize: '6rem' }} />,
   },
   {
     label: 'LinkedIn',
     url: 'https://www.linkedin.com/in/luke-bailey-cybersec/',
-    icon: <FaLinkedinIn className='cursor-pointer' style={{ fontSize: '4rem' }} />,
+    icon: <FaLinkedinIn className='cursor-pointer' style={{ fontSize: '6rem' }} />,
+  },
+  {
+    label: 'Email',
+    url: 'mailto:lukejbailey2014@gmail.com',
+    icon: <ImMail className='cursor-pointer' style={{ fontSize: '6rem' }} />,
+  },
+  {
+    label: 'Resume',
+    url: cvPath,
+    icon: <FaFileDownload className='cursor-pointer' style={{ fontSize: '6rem' }} />,
+  },
+]
+
+export const footerLinks = [
+  {
+    label: 'GitHub',
+    url: 'https://github.com/Whiskerz1337',
+    icon: <FaGithub className='cursor-pointer' style={{ fontSize: '3rem' }} />,
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/luke-bailey-cybersec/',
+    icon: <FaLinkedinIn className='cursor-pointer' style={{ fontSize: '3rem' }} />,
   },
   {
     label: 'Mail me',
     url: 'mailto:lukejbailey2014@gmail.com',
-    icon: <ImMail className='cursor-pointer' style={{ fontSize: '4rem' }} />,
+    icon: <ImMail className='cursor-pointer' style={{ fontSize: '3rem' }} />,
   },
   {
     label: 'My Resume',
     url: cvPath,
-    icon: <FaFileDownload className='cursor-pointer' style={{ fontSize: '4rem' }} />,
+    icon: <FaFileDownload className='cursor-pointer' style={{ fontSize: '3rem' }} />,
   },
 ]
 
@@ -119,7 +133,7 @@ export const projectData = [
   },
   {
     id: 1,
-    title: 'tip',
+    title: 'TIP',
     description: 'A CLI based target IP address management for penetration testers',
     imageUrl: `${process.env.PUBLIC_URL}/kali_logo.png`,
     technologies: ['Solo Project', 'Rust', 'zsh', 'bash', 'Kali Linux', 'git', 'GitHub'],

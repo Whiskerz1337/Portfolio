@@ -8,8 +8,8 @@ const SectionButton = ({ name, content, active, activateSection }) => {
       onClick={() => activateSection(name)}
       className={
         active
-          ? 'custom-shadow mx-3 flex h-24 w-36 items-center justify-center rounded-2xl bg-arcade p-5  font-roboto text-xl text-primary hover:bg-arcade/80 '
-          : ' custom-shadow mx-3 flex h-24 w-36 items-center justify-center rounded-2xl bg-sith p-5 font-roboto text-xl text-primary hover:bg-sith/80 hover:text-arcade '
+          ? 'custom-shadow flex h-20 w-28 scale-100 items-center justify-center rounded-2xl bg-arcade font-exo text-2xl text-primary hover:text-sith sm:h-24 sm:w-40 '
+          : ' custom-shadow flex h-20 w-28 scale-95 items-center justify-center rounded-2xl bg-sith font-exo text-2xl text-primary hover:scale-100 hover:bg-sith/80 hover:text-arcade sm:h-24 sm:w-40 '
       }
     >
       {content}

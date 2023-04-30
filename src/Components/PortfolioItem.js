@@ -1,22 +1,30 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import PropTypes from 'prop-types'
+import '../styles/button.css'
 
 const PortfolioItem = ({ id, title, description, imageUrl, technologies, active, setActive }) => {
   return (
     <div
       onClick={() => setActive(id)}
-      className={`mb-2 flex h-40 min-w-full cursor-pointer flex-row overflow-hidden rounded-2xl border border-arcade transition-all duration-500 ease-linear hover:opacity-80 ${
-        active ? 'bg-sith' : 'bg-primary'
+      className={`custom-shadow hover: mb-2 flex h-auto min-w-full scale-95 cursor-pointer flex-row overflow-hidden rounded-2xl border border-arcade transition-all duration-500 ease-linear hover:scale-100 sm:h-40 ${
+        active ? 'scale-100 bg-arcade/50' : 'bg-primary'
       }`}
     >
-      <img className='w-44 select-none object-cover opacity-95' src={imageUrl} alt={title} />
-      <div className='ml-4 flex-1 p-2'>
-        <h3 className='select-none font-exo text-lg text-primary'>{title}</h3>
-        <p className='mb-0 select-none font-roboto text-sm text-primary'>{description}</p>
-        <ul className='mb-2 select-none list-none pl-0'>
+      <img
+        className='hidden w-44 select-none object-cover opacity-95 sm:block'
+        src={imageUrl}
+        alt={title}
+      />
+      <div className='ml-2 flex-1 p-2 sm:ml-4'>
+        <h3 className='select-none font-exo text-xl text-primary'>{title}</h3>
+        <p className='mb-0 select-none font-exo text-xs text-primary sm:text-sm'>{description}</p>
+        <ul className='mb-2 hidden select-none list-none pl-0 sm:block'>
           {technologies.map((tech, index) => (
-            <li key={index} className='inline-flex truncate pr-2 text-xs text-grey'>
+            <li
+              key={index}
+              className='inline-flex truncate pr-1 text-xs font-bold text-grey sm:pr-2'
+            >
               {tech}
             </li>
           ))}
