@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types'
 import '../styles/imageOpacity.css'
 
-const TipContent = ({ imageUrl }) => {
+const TipContent = () => {
   return (
     <>
       <div className='relative min-h-full overflow-hidden'>
-        <img
-          src={imageUrl}
-          alt='Background'
-          className='absolute inset-0 hidden object-cover object-center opacity-10 sm:block'
-        />
         <div className='relative'></div>
         <div className='px-4 sm:p-6'>
           <h2 className='hidden justify-center self-center text-center font-exo text-lg text-secondary sm:block sm:text-2xl'>

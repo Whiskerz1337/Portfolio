@@ -38,6 +38,7 @@ const SmoothFade = ({ in: inProp, children }) => {
     >
       {() => (
         <div
+          className='min-w-full'
           ref={nodeRef}
           style={{
             opacity: opacity,

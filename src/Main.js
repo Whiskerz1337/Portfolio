@@ -6,6 +6,7 @@ import ProjectsSection from './Sections/ProjectsSection'
 import ContactSection from './Sections/ContactSection'
 import SectionButton from './Components/SectionButton'
 import SmoothCollapse from './styles/SmoothCollapse'
+import SmoothFade from './styles/SmoothFade'
 
 const Main = () => {
   const [activeSection, setActiveSection] = useState(null)
@@ -32,7 +33,7 @@ const Main = () => {
 
   return (
     <>
-      <div className='container mx-auto min-h-screen w-full bg-primary p-4'>
+      <div className='container mx-auto min-h-screen w-full bg-faster-black-radial-gradient p-4'>
         <section id='title' className='mb-2'>
           <h1 className='mb-1 flex justify-center self-center font-exo text-2xl text-secondary sm:text-4xl'>
             Luke Bailey
@@ -61,7 +62,9 @@ const Main = () => {
             <BioSection id='bio' />
           </SmoothCollapse>
           <SmoothCollapse in={activeSection === 'contact'}>
-            <ContactSection id='contact' />
+            <div className='min-h-[60vh] min-w-full'>
+              <ContactSection id='contact' />
+            </div>
           </SmoothCollapse>
           <SmoothCollapse in={activeSection === 'skills'}>
             <SkillsSection id='skills' />
@@ -72,7 +75,9 @@ const Main = () => {
         </section>
         <div className='border-t-2 border-arcade'></div>
         <div className='sticky top-[100vh] min-w-full'>
-          <Footer />
+          <SmoothFade in={activeSection !== 'contact'}>
+            <Footer />
+          </SmoothFade>
         </div>
       </div>
     </>

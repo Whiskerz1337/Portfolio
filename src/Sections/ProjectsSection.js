@@ -51,34 +51,34 @@ const ProjectsSection = () => {
             })}
         </div>
         <div
-          className={`custom-shadow ml-5 flex h-full min-h-[58vh] w-2/3 flex-col overflow-hidden rounded-2xl border border-white/5 text-primary lg:min-h-0`}
+          className={`custom-shadow ml-5 flex h-full min-h-[70vh] w-2/3 flex-col overflow-hidden rounded-2xl border border-white/5 text-primary lg:min-h-0`}
         >
           <>
             <SmoothCollapse in={activeArticle === 0}>
               <div className='h-full'>
                 <ProjectArticle project={projectData[0]}>
-                  <RaspiContent imageUrl={projectData[0].imageUrl} />
+                  <RaspiContent />
                 </ProjectArticle>
               </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 1}>
               <div className='h-full'>
                 <ProjectArticle project={projectData[1]}>
-                  <TipContent imageUrl={projectData[1].imageUrl} />
+                  <TipContent />
                 </ProjectArticle>
               </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 2}>
               <div className='h-full'>
                 <ProjectArticle project={projectData[2]}>
-                  <CSGraphsContent imageUrl={projectData[2].imageUrl} />
+                  <CSGraphsContent />
                 </ProjectArticle>
               </div>
             </SmoothCollapse>
             <SmoothCollapse in={activeArticle === 3}>
               <div className='h-full'>
                 <ProjectArticle project={projectData[3]}>
-                  <JunkAppContent imageUrl={projectData[3].imageUrl} />
+                  <JunkAppContent />
                 </ProjectArticle>
               </div>
             </SmoothCollapse>
