@@ -152,7 +152,7 @@ export const projectData = [
     description: 'Co-developed with a professional back-end engineer.',
     imageUrl: `${process.env.PUBLIC_URL}/CRM_App/login_page.png`,
     technologies: ['Team Project', 'Docker', 'NodeJS', 'React', 'React-Router'],
-    gitHubLink: '',
+    gitHubLink: 'https://github.com/tomstrat/CRM_Table_View',
     externalLink: '',
   },
 ]
