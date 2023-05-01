@@ -8,7 +8,7 @@ const ProjectArticle = ({ project, children }) => {
 
   return (
     <>
-      <div className='flex flex-col items-center justify-center rounded-2xl '>
+      <div className='flex flex-col items-center justify-center rounded-2xl bg-inverted-circle-radial-gradient'>
         <h2 className='mt-2 text-center font-exo text-2xl text-secondary'>{title}</h2>
         <p className='hidden text-center font-exo text-base text-primary md:block'>{description}</p>
         <div className=' hidden flex-wrap justify-center md:flex'>
