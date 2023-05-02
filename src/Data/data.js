@@ -143,7 +143,7 @@ export const projectData = [
     description: 'In development, track CSGO skin prices, and display them in various ways.',
     imageUrl: `${process.env.PUBLIC_URL}/CSGraphs/CSGO_thumb.jpg`,
     technologies: ['Team Project', 'NodeJS', 'React', 'Tailwind CSS', 'Express', 'Firebase'],
-    gitHubLink: '',
+    gitHubLink: 'https://github.com/Jimslazy/csgraphs',
     externalLink: '',
   },
   {
